@@ -10,7 +10,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><img class="w3-image" src="{%static "vrglblue.png"%}" alt="wtf" width="50" height="50"></a>
+    <a href="#home" class="w3-bar-item w3-button"><img class="w3-image" src="{%static "vrglblue.png"%}" alt="wtf" width="50" height=""></a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="" class="w3-bar-item w3-button">Home</a>
@@ -30,116 +30,71 @@
   </div>
 </header>
 
-<!--sample--> 
-
-<div class="w3-content w3-padding" style="max-width:1564px">
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>user {{user.is_authenticated}}!</p>
-    {% if user.is_authenticated %}
-  Hi {{ user.username }}!
-  <p><a href="{% url 'logout' %}">logout</a></p>
-{% else %}
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}">login</a>
-{% endif %}
-  </div>
-
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>we are cool 
-    </p>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Mission Statement</h3>
+    <p>Using our provided services, we want to promote productivity and the development of better study habits through a supportive environment.</p>
+  </div>
+
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">What is VRGL?</h3>
+    <p>VRGL(vur-juh l) is an online study companion</p>
+  </div>
+
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Meaning Behind VRGL</h3>
+    <p>VRGL is actually an acronym for Virtual Resource for Good Learning. We got the inspiration to name the service “VRGL” from the poem, “Dante’s Inferno” (also known as “The Divine Comedy”).</p>
+
+    <p class="w3-opacity">Dante's Inferno</p>
+    <p>In the story, the poet Virgil guides the author Dante through the nine circles of Hell. At the end of the story, it is revealed to Dante that in order to ascend to Heaven, he must realize the consequences of own sins. After doing so, Dante finally takes a voyage to the afterlife. 
+    
+    <p>Similarly, our service “VRGL” acts as a guardian figure and companion to users who are using the program to get through the difficulties of life (school, work, etc.). However, users may only reach a place of personal achievement if they learn from the service and grow. </p>
   </div>
 
   <div class="w3-row-padding w3-grayscale">
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>John Doe</h3>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <h3>Jett Costibolo</h3>
+      <p class="w3-opacity">Main Developer - Back End</p>
+      <p>2nd Year Computer Engineering</p>
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Jane Doe</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <h3>Caroline Padilla</h3>
+      <p class="w3-opacity">Main Developer - Back End</p>
+      <p>2nd Year Software Engineering</p>
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Mike Ross</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <h3>Matthew Patacsil</h3>
+      <p class="w3-opacity">Main Developer - Front End</p>
+      <p>4th Year Software Engineering</p>
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Dan Star</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <h3>Ryan Madamba</h3>
+      <p class="w3-opacity">Developer and Design</p>
+      <p>2nd Year Computer Engineering</p>
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
-  </div>
-
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-      </div>
+     <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Zen Tran</h3>
+      <p class="w3-opacity">Developer and Design</p>
+      <p>2nd Year Liberal Arts and Engineering Studies</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
-      </div>
+      <h3>Alyssa Olivarria</h3>
+      <p class="w3-opacity">Web/Graphic Designer</p>
+      <p>2nd Year Graphic Communications</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
-      </div>
+      <h3>Zeya Longid</h3>
+      <p class="w3-opacity">Web/Graphic Designer</p>
+      <p>1st Year Architectural Engineering</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
   </div>
 
@@ -160,7 +115,6 @@
   
 <!-- Image of location/map -->
 <div class="w3-container">
-  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
 </div>
 
 <!-- End page content -->
