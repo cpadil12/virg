@@ -9,13 +9,13 @@ def userhome(request):
 	return render(None, 'userhome.html')
 
 def tools(request): 
-	return HttpResponse('tools page comin soon promise')
+	return HttpResponse('Tools page coming soon!')
 
 def community(request): 
-	return HttpResponse('community page comin soon trust')
+	return HttpResponse('Community page coming soon!')
 
 def resources(request): 
-	return HttpResponse('resources page comin soon bless up')
+	return HttpResponse('Resources page coming soon!')
 
 def aboutus(request): 
-	return HttpResponse('about us page comin soon bless down')
+	return HttpResponse('About Us page coming soon!')
